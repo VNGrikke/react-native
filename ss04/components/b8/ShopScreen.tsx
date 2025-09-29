@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { SafeAreaView, View, Text, FlatList, StyleSheet } from "react-native";
+import { View, Text, FlatList, StyleSheet } from "react-native";
 import ProductItem from "./ProductItem";
 
 const PRODUCTS = [
@@ -41,7 +41,7 @@ export default function ShopScreen() {
   );
 
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       {/* Tổng số mặt hàng */}
       <Text style={styles.cartInfo}>Số mặt hàng trong giỏ: {totalItems}</Text>
 
@@ -58,7 +58,7 @@ export default function ShopScreen() {
           />
         )}
       />
-    </SafeAreaView>
+    </View>
   );
 }
 
